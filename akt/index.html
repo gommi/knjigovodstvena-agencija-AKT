@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kjnigovodstvena agencija AKT</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--fontawsome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap cdn-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!--Mapbox CDN-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--Top Info-->
+    <div id="topInfo" class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 text-center text-lg-right">
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <i class="fas fa-phone-alt"></i> +387 53/612-127
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center text-lg-right">
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <i class="fas fa-map-marker-alt"></i> Trg 7. oktobra bb, Brod,
+            Republika Srpska, BiH
+          </p>
+        </div>
+        <div class="col-12 col-md-8 col-lg-4 text-center text-lg-right">
+          <p id="demo" class="topInfoPar m-0 pt-2 pb-2">
+            <i class="far fa-clock"></i>
+          </p>
+        </div>
+        <div
+          class="col-md-4 col-lg-1 d-none d-md-block text-center text-lg-right pr-4"
+        >
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <a
+              href="https://www.facebook.com/Knjigovodstvena-agencija-Akt-105771828150999"
+              style="text-decoration: none; color: #3f3d56"
+            >
+              <i class="fab fa-facebook-square"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Navbar-->
+    <div id="nav" class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#banner">
+          <div class="d-flex align-items-center">
+            <!--
+            <img
+              src="/docs/4.0/assets/brand/bootstrap-solid.svg"
+              width="60"
+              height="60"
+            />-->
+            <p class="titleAkt m-0 pl-3">AKT</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link pl-4 pr-4"
+                href="#banner"
+                style="
+                  color: #f2f2f2;
+                  border: 1px solid #f2f2f2;
+                  border-radius: 90px;
+                "
+                >Početna</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#oNama" style="color: #f2f2f2"
+                >O Nama</a
+              >
+            </li>
+            <li class="nav-item dropdown pr-lg-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html#usluge"
+                style="color: #f2f2f2"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Usluge</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item text-center"
+                  href="konsultovanje.html"
+                  style="color: #3f3d56"
+                  >Konsultacije</a
+                >
+                <a
+                  class="dropdown-item text-center"
+                  href="preduzece.html"
+                  style="color: #3f3d56"
+                  >Preduzeće</a
+                >
+                <a
+                  class="dropdown-item text-center"
+                  href="preduzetnik.html"
+                  style="color: #3f3d56"
+                  >Preduzetnici</a
+                >
+              </div>
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#nasTim" style="color: #f2f2f2"
+                >Naš tim</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#newsSection" style="color: #f2f2f2"
+                >Novosti</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#pitanja" style="color: #f2f2f2"
+                >Pitanja</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#kontakt" style="color: #f2f2f2"
+                >Kontakt</a
+              >
+            </li>
+
+            <a class="btn btn-primary" href="login.html" role="button"
+              >Prijava</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--Banner-->
+    <div id="banner" class="banner container-fluid">
+      <div class="row">
+        <div
+          id="titleAktCont"
+          class="cal-12 col-lg-6 pl-2 pl-md-5 d-flex flex-column"
+        >
+          <p class="knjigAgenTitle text-center text-md-left m-0">
+            Knjigovodstvena <br />
+            agencija
+          </p>
+          <p class="akt text-center text-md-left m-0">AKT</p>
+
+          <p
+            class="m-0 d-flex justify-content-center d-md-flex justify-content-md-start"
+          >
+            <a
+              class="btn bannerBtn p-0 mt-5 d-flex justify-content-center align-items-center"
+              href="#oNama"
+              role="button"
+            >
+              <span id="bannerBtnVise">
+                Više <i class="fas fa-arrow-right"></i
+              ></span>
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
+    <!--Reklama-->
+    <div class="container-fluid p-0 d-none d-md-block">
+      <div class="col-lg-12 pt-3 pb-3 d-flex" style="background-color: #fed803">
+        <p class="m-0" style="font-size: 32px; color: #3f3d56">
+          Tražiš prvoklasnu knjigovodstvenu uslugu?
+        </p>
+
+        <a class="reklamaBtn btn p-0 ml-auto" href="#kontakt" role="button">
+          <span style="font-size: 32px; color: #fed803">
+            Započni <i class="fas fa-arrow-right"></i></span
+        ></a>
+      </div>
+    </div>
+    <!--O nama-->
+    <div id="oNama" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="sectionTitle m-0 pt-md-5">O Nama</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <p class="oNamaText m-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
+              commodo lobortis praesent nulla molestie. Facilisi orci
+              pellentesque mollis nisl, ut nibh cursus libero. Congue purus diam
+              odio nec, consectetur quam velit. Quis at quam eget sed eu,
+              integer id. Tellus maecenas enim mauris urna ut odio. Semper
+              molestie eu leo netus sed ultrices sollicitudin. Neque, proin
+              porttitor nec sollicitudin enim eu dignissim pellentesque.
+            </p>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          <div class="col-12 pt-4 pt-md-0 col-md-6 col-lg-4 text-center">
+            <svg
+              id="oNamaSvg"
+              viewBox="0 0 354 404"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  opacity="0.4"
+                  d="M83.0775 352.003C88.0733 352.003 92.1231 347.864 92.1231 342.758C92.1231 337.652 88.0733 333.513 83.0775 333.513C78.0818 333.513 74.032 337.652 74.032 342.758C74.032 347.864 78.0818 352.003 83.0775 352.003Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  opacity="0.4"
+                  d="M66.3365 353.659C69.8409 353.659 72.6819 350.755 72.6819 347.174C72.6819 343.592 69.8409 340.688 66.3365 340.688C62.832 340.688 59.9911 343.592 59.9911 347.174C59.9911 350.755 62.832 353.659 66.3365 353.659Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  d="M321.927 216.413C330.666 193.898 334.232 169.633 332.35 145.487C330.468 121.341 323.189 97.9584 311.074 77.1403L63.6577 112.153L300.762 61.6498C286.336 42.4554 267.782 26.9113 246.536 16.2207C225.291 5.53022 201.923 -0.0199134 178.242 -7.67954e-06C92.8598 -7.67954e-06 23.6443 70.7417 23.6443 158.006C23.646 165.218 24.1267 172.422 25.0832 179.568L321.927 216.413Z"
+                  fill="#F2F2F2"
+                />
+                <path
+                  d="M33.9778 214.895C56.3235 274.047 112.484 316.012 178.242 316.012C239.946 316.012 293.199 279.061 317.994 225.632L33.9778 214.895Z"
+                  fill="#F2F2F2"
+                />
+                <path
+                  d="M64.2639 76.8344C68.2819 76.8344 71.5391 73.5053 71.5391 69.3988C71.5391 65.2922 68.2819 61.9632 64.2639 61.9632C60.246 61.9632 56.9888 65.2922 56.9888 69.3988C56.9888 73.5053 60.246 76.8344 64.2639 76.8344Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M326.17 163.583C330.188 163.583 333.445 160.254 333.445 156.147C333.445 152.041 330.188 148.712 326.17 148.712C322.152 148.712 318.895 152.041 318.895 156.147C318.895 160.254 322.152 163.583 326.17 163.583Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  d="M75.783 210.055H63.6577V222.448H75.783V210.055Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  d="M162.479 119.589C162.479 119.589 182.485 110.679 191.882 120.091C201.28 129.503 166.722 126.405 162.479 119.589Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M197.025 77.333C190.302 65.7221 177 65.1809 177 65.1809C177 65.1809 164.038 63.4869 155.723 81.1704C147.973 97.653 137.277 113.567 154.001 117.426L157.022 107.816L158.893 118.141C161.274 118.316 163.663 118.358 166.049 118.266C183.959 117.675 201.016 118.439 200.467 111.87C199.737 103.138 203.494 88.505 197.025 77.333Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M178.545 254.669C197.295 254.669 212.495 251.062 212.495 246.614C212.495 242.165 197.295 238.558 178.545 238.558C159.794 238.558 144.594 242.165 144.594 246.614C144.594 251.062 159.794 254.669 178.545 254.669Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M205.782 345.449L173.043 347.923L173.133 349.159L205.871 346.684L205.782 345.449Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M151.555 341.184L150.971 342.27L163.096 349.086L163.68 348L151.555 341.184Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M185.82 336.77H174.907V338.009H185.82V336.77Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M146.412 403.113L145.201 403.028L154.295 259.274L155.505 259.358L146.412 403.113Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M191.277 403.101L185.214 261.825L186.426 261.764L192.488 403.04L191.277 403.101Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M203.4 260.504L202.191 260.606L213.71 403.122L214.918 403.02L203.4 260.504Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M206.433 287.819C206.433 287.819 197.945 303.929 192.489 303.929C187.032 303.929 187.639 314.463 188.851 316.942C190.064 319.42 193.095 324.997 188.245 333.052C186.551 335.866 186.854 339.058 187.966 342.02C191.08 350.32 203.197 347.805 202.811 338.924C202.806 338.827 202.801 338.728 202.795 338.629C202.189 328.715 207.039 313.224 211.889 309.506C216.739 305.788 220.983 295.874 220.983 295.874L206.433 287.819Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M148.231 284.101C148.231 284.101 156.719 300.212 162.176 300.212C167.632 300.212 167.026 310.745 165.813 313.224C164.601 315.702 161.569 321.279 166.419 329.334C168.114 332.148 167.81 335.34 166.699 338.302C163.584 346.602 151.467 344.087 151.854 335.207C151.858 335.109 151.863 335.01 151.869 334.911C152.475 324.997 147.625 309.506 142.775 305.788C137.925 302.071 133.681 292.156 133.681 292.156L148.231 284.101Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M154.9 204.788L151.263 212.844C151.263 212.844 97.9116 230.813 102.762 251.88C107.612 272.948 131.256 305.788 134.894 304.549C138.531 303.31 157.932 299.592 158.538 289.058C159.144 278.525 144.594 259.936 144.594 259.936L164.601 241.347L193.714 240.727L218.558 259.936C218.558 259.936 192.489 283.482 204.008 292.776C215.527 302.071 232.502 308.267 234.927 304.549C237.352 300.831 264.634 245.684 260.39 240.727C256.146 235.77 213.102 217.181 213.102 217.181L201.583 200.451L156.719 197.972L154.9 204.788Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M165.813 102.549C165.813 102.549 168.844 122.997 162.782 125.475C156.719 127.954 174.907 138.488 174.907 138.488H185.214L191.882 124.236C191.882 124.236 185.82 113.083 189.457 102.549C193.095 92.0154 165.813 102.549 165.813 102.549Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  opacity="0.1"
+                  d="M165.813 102.549C165.813 102.549 168.844 122.997 162.782 125.475C156.719 127.954 174.907 138.488 174.907 138.488H185.214L191.882 124.236C191.882 124.236 185.82 113.083 189.457 102.549C193.095 92.0154 165.813 102.549 165.813 102.549Z"
+                  fill="black"
+                />
+                <path
+                  d="M161.569 119.899C161.569 119.899 168.238 127.334 169.451 128.574C170.663 129.813 176.12 136.629 187.639 126.715C199.158 116.801 200.37 128.574 200.37 128.574V202.929C200.37 202.929 190.67 198.592 182.788 202.929C174.907 207.267 158.538 201.69 158.538 201.69L155.507 124.856L161.569 119.899Z"
+                  fill="#D0CDE1"
+                />
+                <path
+                  d="M166.022 119.899C166.022 119.899 160.357 117.42 155.507 119.899C150.656 122.377 133.681 134.77 134.894 140.347C136.106 145.923 151.869 184.96 140.956 203.549C130.044 222.138 128.225 227.095 128.225 227.095L154.9 212.844C154.9 212.844 175.513 199.831 173.694 191.776C171.876 183.721 166.022 119.899 166.022 119.899Z"
+                  fill="#514C9A"
+                />
+                <path
+                  d="M190.071 119.899C190.071 119.899 202.795 121.138 203.402 122.377C204.008 123.617 222.499 128.883 221.286 134.46C220.074 140.037 203.402 189.917 210.677 199.212C217.952 208.506 230.077 221.518 225.833 222.758C221.589 223.997 214.314 220.899 207.039 222.758C199.764 224.617 182.789 209.126 184.607 192.396C186.426 175.666 184.622 124.236 190.071 119.899Z"
+                  fill="#514C9A"
+                />
+                <path
+                  d="M159.751 238.248V244.445C159.751 244.445 156.719 258.696 166.419 258.077C176.12 257.457 170.057 240.727 170.057 240.727L169.451 235.15L159.751 238.248Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M187.032 238.868C187.032 238.868 180.363 253.12 187.032 254.359C193.701 255.598 198.551 246.304 198.551 243.825C198.551 241.347 187.032 238.868 187.032 238.868Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M165.207 403.085L163.994 403.056L167.632 260.54L168.844 260.57L165.207 403.085Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M195.823 96.6626C196.493 96.6626 197.036 95.5529 197.036 94.184C197.036 92.8152 196.493 91.7055 195.823 91.7055C195.153 91.7055 194.611 92.8152 194.611 94.184C194.611 95.5529 195.153 96.6626 195.823 96.6626Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M160.054 96.6626C160.723 96.6626 161.266 95.5529 161.266 94.184C161.266 92.8152 160.723 91.7055 160.054 91.7055C159.384 91.7055 158.841 92.8152 158.841 94.184C158.841 95.5529 159.384 96.6626 160.054 96.6626Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M206.433 127.954C206.433 127.954 221.589 127.954 220.983 134.15C220.377 140.347 200.37 246.923 200.37 246.923C200.37 246.923 191.882 238.868 184.607 240.727L206.433 127.954Z"
+                  fill="#514C9A"
+                />
+                <path
+                  d="M147.625 129.813C147.625 129.813 132.469 132.911 132.469 142.206C132.469 151.5 154.294 240.727 157.325 240.727C160.357 240.727 171.876 238.868 171.876 235.77C171.876 232.672 147.625 129.813 147.625 129.813Z"
+                  fill="#514C9A"
+                />
+                <path
+                  opacity="0.2"
+                  d="M150.96 148.092L164.601 202.614C164.601 202.614 158.235 154.908 150.96 148.092Z"
+                  fill="black"
+                />
+                <path
+                  opacity="0.2"
+                  d="M204.018 140.431L190.222 211.716C190.222 211.716 194.631 144.543 204.018 140.431Z"
+                  fill="black"
+                />
+                <path
+                  d="M177.938 112.463C187.649 112.463 195.52 104.418 195.52 94.4939C195.52 84.5697 187.649 76.5245 177.938 76.5245C168.228 76.5245 160.357 84.5697 160.357 94.4939C160.357 104.418 168.228 112.463 177.938 112.463Z"
+                  fill="#FFB8B8"
+                />
+                <path
+                  d="M194.052 76.2135L180.911 69.1782L162.764 72.0564L159.009 89.0051L168.355 88.6377L170.966 82.411V88.5355L175.279 88.3657L177.782 78.4522L179.347 89.0051L194.679 88.6854L194.052 76.2135Z"
+                  fill="#2F2E41"
+                />
+                <path
+                  d="M337.083 402.761H6.06262V404H337.083V402.761Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M281.66 402.773L280.447 402.749C280.916 388.97 282.355 375.243 284.752 361.675C289.995 332.626 298.713 313.548 310.665 304.971L311.361 305.986C283.442 326.021 281.674 402.007 281.66 402.773Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M296.816 402.476L295.604 402.452C295.63 401.08 296.388 368.735 308.846 359.796L309.543 360.81C297.587 369.389 296.822 402.147 296.816 402.476Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M318.288 305.479C321.637 305.479 324.351 302.704 324.351 299.282C324.351 295.86 321.637 293.086 318.288 293.086C314.94 293.086 312.226 295.86 312.226 299.282C312.226 302.704 314.94 305.479 318.288 305.479Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  d="M315.257 359.387C318.605 359.387 321.32 356.612 321.32 353.19C321.32 349.768 318.605 346.994 315.257 346.994C311.909 346.994 309.194 349.768 309.194 353.19C309.194 356.612 311.909 359.387 315.257 359.387Z"
+                  fill="#6C63FF"
+                />
+                <path
+                  d="M293.99 309.813C295.13 317.251 292.16 323.903 292.16 323.903C292.16 323.903 287.343 318.497 286.204 311.059C285.065 303.62 288.034 296.968 288.034 296.968C288.034 296.968 292.851 302.375 293.99 309.813Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M313.808 327.877C306.84 330.32 299.913 328.49 299.913 328.49C299.913 328.49 304.283 322.7 311.25 320.258C318.218 317.815 325.145 319.645 325.145 319.645C325.145 319.645 320.775 325.435 313.808 327.877Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M314.031 375.069C310.878 376.081 307.519 376.23 304.292 375.499C306.341 372.833 309.101 370.829 312.239 369.728C315.377 368.628 318.759 368.479 321.978 369.299C319.869 371.9 317.129 373.89 314.031 375.069Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M1.21253 118.969H0V38.4172H77.6018V39.6564H1.21253V118.969Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M354 118.969H352.787V39.6564H276.398V38.4172H354V118.969Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M1.21253 187.129H0V267.681H77.6018V266.442H1.21253V187.129Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M354 187.129H352.787V266.442H276.398V267.681H354V187.129Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M106.702 76.2147H21.8254V77.454H106.702V76.2147Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M46.0761 65.0613H44.8635V76.5245H46.0761V65.0613Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M83.0581 65.0613H81.8456V76.5245H83.0581V65.0613Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M335.87 163.583H250.993V164.822H335.87V163.583Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M275.244 152.429H274.031V163.893H275.244V152.429Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M312.226 152.429H311.013V163.893H312.226V152.429Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M112.159 221.828H27.2819V223.068H112.159V221.828Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M51.5325 210.675H50.3199V222.138H51.5325V210.675Z"
+                  fill="#3F3D56"
+                />
+                <path
+                  d="M88.5145 210.675H87.302V222.138H88.5145V210.675Z"
+                  fill="#3F3D56"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="354" height="404" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--usuge-->
+    <div id="usluge" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="sectionTitle m-0 pt-3 pt-md-5 pb-5">
+              Knjigovodstvene usluge
+            </p>
+          </div>
+          <!--Konsultacije-->
+          <div
+            class="col-md-4 d-flex justify-content-center justify-content-md-end pb-5"
+          >
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="img/konsultovanje.jpg"
+                style="height: 10rem"
+              />
+              <div class="card-body p-0">
+                <a
+                  href="konsultovanje.html"
+                  class="p-0 pl-4 d-flex align-items-center"
+                  style="text-decoration: none; color: #000"
+                >
+                  <p class="card-title m-0 p-0">Konsultovanje</p>
+                  <p class="ml-auto m-0 p-0 pr-4"><i class="fas fa-plus"></i></p
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Preduzece-->
+          <div class="col-md-4 d-flex justify-content-center pb-5">
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="img/preduzece.jpg"
+                style="height: 10rem"
+              />
+              <div class="card-body p-0">
+                <a
+                  href="preduzece.html"
+                  class="p-0 pl-4 d-flex align-items-center"
+                  style="text-decoration: none; color: #000"
+                >
+                  <p class="card-title m-0 p-0">Preduzeća</p>
+                  <p class="ml-auto m-0 p-0 pr-4"><i class="fas fa-plus"></i></p
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--Preduzetnici-->
+          <div
+            class="col-md-4 d-flex justify-content-center justify-content-md-start pb-5"
+          >
+            <div class="card" style="width: 20rem">
+              <img
+                class="card-img-top"
+                src="img/preduzetnici.jpg"
+                style="height: 10rem"
+              />
+              <div class="card-body p-0">
+                <a
+                  href="preduzetnik.html"
+                  class="p-0 pl-4 d-flex align-items-center"
+                  style="text-decoration: none; color: #000"
+                >
+                  <p class="card-title m-0 p-0">Preduzetnici</p>
+                  <p class="ml-auto m-0 p-0 pr-4"><i class="fas fa-plus"></i></p
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Counter-->
+
+      <div id="sijalica" class="row">
+        <div id="bannerBroj" class="col-lg-12 p-0">
+          <div id="transpColor" class="p-0">
+            <div class="container" style="height: 500px">
+              <div class="row" style="height: 250px">
+                <div
+                  class="col-lg-12 pt-md-5 pb-md-5 d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 32C0 23.5131 3.37142 15.3737 9.37258 9.37258C15.3737 3.37142 23.5131 0 32 0C40.4869 0 48.6263 3.37142 54.6274 9.37258C60.6286 15.3737 64 23.5131 64 32C64 40.4869 60.6286 48.6263 54.6274 54.6274C48.6263 60.6286 40.4869 64 32 64C23.5131 64 15.3737 60.6286 9.37258 54.6274C3.37142 48.6263 0 40.4869 0 32H0ZM30.1739 45.696L48.5973 22.6645L45.2693 20.0021L29.5595 39.6331L18.432 30.3616L15.7013 33.6384L30.1739 45.7003V45.696Z"
+                      fill="#FED803"
+                    />
+                  </svg>
+                  <p class="bannerBrojTitle pl-3">
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="row" style="height: 250px">
+                <div
+                  class="col-12 col-md-4 text-center d-flex justify-content-center flex-column"
+                >
+                  <div class="counterBuss" data-target="30">0</div>
+                  <p class="numberName">Komitenata</p>
+                </div>
+                <div
+                  class="col-12 col-md-4 text-center d-flex justify-content-center flex-column"
+                >
+                  <div class="counterYears" data-target="10">0</div>
+                  <p class="numberName">Godina poslovanja</p>
+                </div>
+                <div
+                  class="col-12 col-md-4 text-center d-flex justify-content-center flex-column"
+                >
+                  <div class="procentCont d-flex justify-content-center">
+                    <div class="counterProc" data-target="100">0</div>
+                    <p class="counter m-0">%</p>
+                  </div>
+                  <p class="numberName">Zadovoljstvo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/counter.js"></script>
+    <!--tim-->
+    <div id="nasTim" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="sectionTitle m-0 pt-3 pt-md-5 pb-5">Naš Tim</p>
+          </div>
+          <div
+            class="col-12 col-md-6 d-sm-flex justify-content-sm-center mb-md-5 mb-sm-5"
+          >
+            <div class="d-flex justify-content-center">
+              <img src="img/preduzece.jpg" id="nasTimImg" />
+            </div>
+            <div class="card-body-tim pl-sm-3">
+              <p class="card-text-tim text-center text-sm-left">
+                Biljana Kojić
+              </p>
+              <hr style="background-color: #000" />
+              <p class="text-center text-sm-left m-0 mx-auto pb-3 pb-sm-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                praesent sociis augue id suspendisse. Urna, sed aliquet congue
+                ornare ut odio non. Diam purus dignissim nibh a proin eu
+                blandit.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 d-sm-flex justify-content-sm-center justify-content-md-start"
+          >
+            <div class="d-flex justify-content-center">
+              <img src="img/preduzece.jpg" id="nasTimImg" />
+            </div>
+            <div class="card-body-tim pl-sm-3">
+              <p class="card-text-tim text-center text-sm-left">
+                Daliborka Tešanović
+              </p>
+              <hr style="background-color: #000" />
+              <p class="text-center text-sm-left mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                praesent sociis augue id suspendisse. Urna, sed aliquet congue
+                ornare ut odio non. Diam purus dignissim nibh a proin eu
+                blandit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Novosti-->
+    <div
+      id="newsSection"
+      class="container-fluid"
+      style="background-color: #f2f2f2"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="sectionTitle m-0 pt-5 pb-5">Novosti</p>
+          </div>
+
+          <div
+            class="col-12 col-md-4 mb-5 d-flex justify-content-center justify-content-md-end"
+          >
+            <div class="contCardNovosti">
+              <div class="contNovostiNaslov d-flex p-3">
+                <div style="width: 100px; height: 100px">
+                  <a
+                    href="../novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <img
+                      src="img/preduzece.jpg"
+                      style="width: 100px; height: 100px"
+                  /></a>
+                </div>
+                <div class="novostiNaslov">
+                  <a
+                    href="novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <p class="pl-3">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p></a
+                  >
+                </div>
+              </div>
+              <hr class="ml-3 mr-3" style="background-color: #000" />
+              <div class="NovostiText p-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquam cumque excepturi neque animi quas ullam.
+                  Officia provident omnis qui. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum ab vitae maiores labore
+                  laboriosam delectus provident, distinctio aut enim iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-5 d-flex justify-content-center">
+            <div class="contCardNovosti">
+              <div class="contNovostiNaslov d-flex p-3">
+                <div style="width: 100px; height: 100px">
+                  <a
+                    href="../novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <img
+                      src="img/preduzece.jpg"
+                      style="width: 100px; height: 100px"
+                  /></a>
+                </div>
+                <div class="novostiNaslov">
+                  <a
+                    href="../novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <p class="pl-3">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p></a
+                  >
+                </div>
+              </div>
+              <hr class="ml-3 mr-3" style="background-color: #000" />
+              <div class="NovostiText p-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquam cumque excepturi neque animi quas ullam.
+                  Officia provident omnis qui. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum ab vitae maiores labore
+                  laboriosam delectus provident, distinctio aut enim iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 mb-5 d-flex justify-content-center justify-content-md-start"
+          >
+            <div class="contCardNovosti">
+              <div class="contNovostiNaslov d-flex p-3">
+                <div style="width: 100px; height: 100px">
+                  <a
+                    href="../novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <img
+                      src="img/preduzece.jpg"
+                      style="width: 100px; height: 100px"
+                  /></a>
+                </div>
+                <div class="novostiNaslov">
+                  <a
+                    href="../novost.html"
+                    style="text-decoration: none; color: #000"
+                  >
+                    <p class="pl-3">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p></a
+                  >
+                </div>
+              </div>
+              <hr class="ml-3 mr-3" style="background-color: #000" />
+              <div class="NovostiText p-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquam cumque excepturi neque animi quas ullam.
+                  Officia provident omnis qui. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum ab vitae maiores labore
+                  laboriosam delectus provident, distinctio aut enim iure!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Pitanja-->
+    <div id="pitanja" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="sectionTitle m-0 pt-5 pb-5">Najčešća pitanja?</p>
+          </div>
+          <div class="container mb-5">
+            <div id="accordion">
+              <!--Jedan-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                    >
+                      <p class="text-left m-0">Pitanje broj jedan?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+
+              <!--Dva-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                    >
+                      <p class="text-left m-0">Pitanje broj dva?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!--Tri-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                    >
+                      <p class="text-left m-0">Pitanje broj tri?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!--Cetiri-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                    >
+                      <p class="text-left m-0">Pitanje broj cetiri?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!--Pet-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                    >
+                      <p class="text-left m-0">Pitanje broj pet?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!--Sest-->
+              <div class="card mb-3">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button
+                      id="pitanje"
+                      type="button"
+                      class="btn btn-link col-12 d-flex align-items-center"
+                      data-toggle="collapse"
+                      data-target="#collapseSix"
+                    >
+                      <p class="text-left m-0">Pitanje broj sest?</p>
+                      <i class="fa fa-plus ml-auto"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseSix"
+                  class="collapse"
+                  aria-labelledby="headingSix"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-pitanje p-4">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/switchImg.js"></script>
+
+    <!--Kontakt form-->
+    <div id="kontakt" class="container-fluid" style="background-color: #3f3d56">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-center">
+            <p class="m-0 pt-3 pl-4">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.66675 5.3335H58.6667V48.0002H37.3334L16.0001 58.6668V48.0002H2.66675V5.3335ZM16.0001 26.6668H18.6667V29.3335H16.0001V26.6668ZM29.3334 26.6668H32.0001V29.3335H29.3334V26.6668ZM42.6667 26.6668H45.3334V29.3335H42.6667V26.6668Z"
+                  stroke="#FED803"
+                  stroke-width="2"
+                />
+              </svg>
+            </p>
+            <p class="sectionTitle m-0 pt-5 pb-5 pl-3" style="color: #fed803">
+              Kontakt
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-5">
+            <form>
+              <div class="form">
+                <div class="col pb-3 pl-0 pr-0">
+                  <label for="ime" style="color: #f2f2f2">Ime:</label>
+                  <input
+                    type="text"
+                    id="ime"
+                    class="form-control"
+                    placeholder="Ime"
+                  />
+                </div>
+                <div class="col pb-3 pl-0 pr-0">
+                  <label for="prezime" style="color: #f2f2f2">Prezime:</label>
+                  <input
+                    type="text"
+                    id="prezime"
+                    class="form-control"
+                    placeholder="Prezime"
+                  />
+                </div>
+                <div class="col pl-0 pr-0">
+                  <label for="nazivFirme" style="color: #f2f2f2"
+                    >Naziv firme:</label
+                  >
+                  <input
+                    type="text"
+                    id="nazivFirme"
+                    class="form-control"
+                    placeholder="Naziv firme"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 pb-3 pb-lg-5">
+            <form>
+              <div class="form">
+                <div class="col pb-3 pl-0 pr-0">
+                  <label for="email" style="color: #f2f2f2">E-mail:</label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="col pb-3 pl-0 pr-0">
+                  <label for="brojTelefona" style="color: #f2f2f2"
+                    >Broj telefona:</label
+                  >
+                  <input
+                    type="text"
+                    id="brojTelefona"
+                    class="form-control"
+                    placeholder="Broj telefona"
+                  />
+                </div>
+                <div class="col pl-0 pr-0">
+                  <label for="adresa" style="color: #f2f2f2">Adresa:</label>
+                  <input
+                    type="text"
+                    id="adresa"
+                    class="form-control"
+                    placeholder="Adresa"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="form-group">
+              <label for="poruka" style="color: #f2f2f2">Poruka:</label>
+              <textarea
+                class="form-control"
+                id="poruka"
+                rows="5"
+                placeholder="Poruka"
+              ></textarea>
+            </div>
+            <button
+              type="button"
+              class="posaljiBtn btn p-0 d-flex justify-content-center align-items-center mb-md-3"
+            >
+              <span id="posaljiBtnFont"> Pošalji </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mapbox-->
+    <div class="container-fluid p-0 d-none d-md-block">
+      <div id="map" style="width: auto; height: 400px"></div>
+      <script src="js/mapbox.js"></script>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #3f3d56">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-md-5 col-lg-4 pt-5 pb-5 text-center text-md-left"
+          >
+            <p style="color: #f2f2f2; font-size: 18px">Bosna i Hercegovina</p>
+            <div
+              class="address d-flex align-items-center justify-content-center justify-content-md-start"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 22 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0.666504C8.18945 0.666363 5.49238 1.77552 3.49503 3.75289C1.49768 5.73027 0.36148 8.41605 0.333374 11.2265C0.333374 18.5332 9.73337 26.6665 10.1334 27.0132C10.3749 27.2197 10.6822 27.3333 11 27.3333C11.3178 27.3333 11.6252 27.2197 11.8667 27.0132C12.3334 26.6665 21.6667 18.5332 21.6667 11.2265C21.6386 8.41605 20.5024 5.73027 18.505 3.75289C16.5077 1.77552 13.8106 0.666363 11 0.666504ZM11 15.3332C10.0771 15.3332 9.17481 15.0595 8.40738 14.5467C7.63995 14.0339 7.04181 13.3051 6.6886 12.4524C6.33539 11.5996 6.24298 10.6613 6.42304 9.75608C6.60311 8.85084 7.04756 8.01932 7.70021 7.36667C8.35285 6.71403 9.18437 6.26957 10.0896 6.08951C10.9949 5.90944 11.9332 6.00186 12.7859 6.35507C13.6386 6.70828 14.3675 7.30641 14.8802 8.07384C15.393 8.84127 15.6667 9.74352 15.6667 10.6665C15.6667 11.9042 15.175 13.0912 14.2999 13.9663C13.4247 14.8415 12.2377 15.3332 11 15.3332Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                Trg 7. oktobra bb, Brod, RS
+              </p>
+            </div>
+            <div
+              class="telefonCont d-flex align-items-center justify-content-center justify-content-md-start pt-3"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.675 7.19375L24.3469 3.86875C24.1121 3.63295 23.8331 3.44586 23.5258 3.31822C23.2185 3.19058 22.889 3.12492 22.5563 3.125C21.8781 3.125 21.2406 3.39063 20.7625 3.86875L17.1813 7.45C16.9454 7.68477 16.7584 7.96382 16.6307 8.27111C16.5031 8.5784 16.4374 8.90788 16.4375 9.24063C16.4375 9.91875 16.7031 10.5563 17.1813 11.0344L19.8 13.6531C19.187 15.0043 18.3348 16.2334 17.2844 17.2812C16.2366 18.3342 15.0076 19.1895 13.6563 19.8062L11.0375 17.1875C10.8027 16.9517 10.5237 16.7646 10.2164 16.637C9.9091 16.5093 9.57962 16.4437 9.24688 16.4438C8.56875 16.4438 7.93125 16.7094 7.45313 17.1875L3.86875 20.7656C3.63266 21.0008 3.44541 21.2804 3.31777 21.5882C3.19012 21.8961 3.12461 22.2261 3.125 22.5594C3.125 23.2375 3.39063 23.875 3.86875 24.3531L7.19063 27.675C7.95313 28.4406 9.00625 28.875 10.0875 28.875C10.3156 28.875 10.5344 28.8563 10.75 28.8188C14.9625 28.125 19.1406 25.8844 22.5125 22.5156C25.8813 19.15 28.1188 14.975 28.8219 10.75C29.0344 9.45937 28.6063 8.13125 27.675 7.19375Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                +387 53/612-127
+              </p>
+            </div>
+            <div
+              class="emailCont d-flex align-items-center justify-content-center justify-content-md-start pt-3"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.4445 5.3335H3.55561C3.08411 5.3335 2.63193 5.5208 2.29853 5.8542C1.96513 6.18759 1.77783 6.63978 1.77783 7.11127V24.889C1.77783 25.3605 1.96513 25.8127 2.29853 26.1461C2.63193 26.4795 3.08411 26.6668 3.55561 26.6668H28.4445C28.916 26.6668 29.3682 26.4795 29.7016 26.1461C30.035 25.8127 30.2223 25.3605 30.2223 24.889V7.11127C30.2223 6.63978 30.035 6.18759 29.7016 5.8542C29.3682 5.5208 28.916 5.3335 28.4445 5.3335ZM27.0756 24.889H5.03117L11.2534 18.4535L9.97339 17.2179L3.55561 23.8579V8.46239L14.6045 19.4579C14.9376 19.7891 15.3882 19.9749 15.8578 19.9749C16.3275 19.9749 16.7781 19.7891 17.1112 19.4579L28.4445 8.18683V23.7424L21.9023 17.2002L20.6489 18.4535L27.0756 24.889ZM4.72005 7.11127H27.0045L15.8578 18.1957L4.72005 7.11127Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                knjigagencijaakt@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 pt-5 pb-5">
+            <div class="contNslovi">
+              <p
+                class="m-0 pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+                style="color: #f2f2f2; font-size: 18px"
+              >
+                Novosti
+              </p>
+              <div
+                class="naslovContOne pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContTwo pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContThree pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContFour pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContFive pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContSix pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 col-lg-4 pt-5 pb-5">
+            <div class="navigacijaCont">
+              <p
+                class="m-0 pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+                style="color: #f2f2f2; font-size: 18px"
+              >
+                Navigacija
+              </p>
+              <div
+                class="navPocetna pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#banner"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Početna</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navOnama pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a href="#oNama" style="color: #f2f2f2; text-decoration: none"
+                    >O Nama</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navUsluga pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#usluge"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Usluge</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navNastim pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#nasTim"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Naš Tim</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navNovosti pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#newsSection"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Novosti</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navPitanja pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#pitanja"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Pitanja</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navkontakt pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#kontakt"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Kontakt</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-12 d-flex align-items-center justify-content-center"
+          >
+            <i
+              class="fas fa-copyright"
+              style="width: 32px; height: 32px; color: #f2f2f2"
+            ></i>
+            <p style="color: #f2f2f2">2021 PHI | Privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/timezone.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

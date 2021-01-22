@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knigovodstvena agencija AKT</title>
+    <link rel="stylesheet" href="css/konsultovanje.css" />
+    <!--fontawsome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap cdn-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Top Info-->
+    <div id="topInfo" class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 text-center text-lg-right">
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <i class="fas fa-phone-alt"></i> +357 53/612-127
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center text-lg-right">
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <i class="fas fa-map-marker-alt"></i> Trg 7. oktobra bb, Brod,
+            Republika Srpska, BiH
+          </p>
+        </div>
+        <div class="col-12 col-md-8 col-lg-4 text-center text-lg-right">
+          <p id="demo" class="topInfoPar m-0 pt-2 pb-2">
+            <i class="far fa-clock"></i>
+          </p>
+        </div>
+        <div
+          class="col-md-4 col-lg-1 d-none d-md-block text-center text-lg-right pr-4"
+        >
+          <p class="topInfoPar m-0 pt-2 pb-2">
+            <a
+              href="https://www.facebook.com/Knjigovodstvena-agencija-Akt-105771828150999"
+              style="text-decoration: none; color: #3f3d56"
+            >
+              <i class="fab fa-facebook-square"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Navbar-->
+    <div id="nav" class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html#banner">
+          <div class="d-flex align-items-center">
+            <!--
+            <img
+              src="/docs/4.0/assets/brand/bootstrap-solid.svg"
+              width="60"
+              height="60"
+            />-->
+            <p class="titleAkt m-0 pl-3">AKT</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link pl-4 pr-4"
+                href="index.html#banner"
+                style="
+                  color: #f2f2f2;
+                  border: 1px solid #f2f2f2;
+                  border-radius: 90px;
+                "
+                >Početna</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a class="nav-link" href="#oNama" style="color: #f2f2f2"
+                >O Nama</a
+              >
+            </li>
+            <li class="nav-item dropdown pr-lg-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html#usluge"
+                style="color: #f2f2f2"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Usluge</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item text-center"
+                  href="konsultovanje.html"
+                  style="color: #3f3d56"
+                  >Konsultacije</a
+                >
+                <a
+                  class="dropdown-item text-center"
+                  href="preduzece.html"
+                  style="color: #3f3d56"
+                  >Preduzeće</a
+                >
+                <a
+                  class="dropdown-item text-center"
+                  href="preduzetnik.html"
+                  style="color: #3f3d56"
+                  >Preduzetnici</a
+                >
+              </div>
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link"
+                href="index.html#nasTim"
+                style="color: #f2f2f2"
+                >Naš tim</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link"
+                href="index.html#newsSection"
+                style="color: #f2f2f2"
+                >Novosti</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link"
+                href="index.html#pitanja"
+                style="color: #f2f2f2"
+                >Pitanja</a
+              >
+            </li>
+            <li class="nav-item pr-lg-3">
+              <a
+                class="nav-link"
+                href="index.html#kontakt"
+                style="color: #f2f2f2"
+                >Kontakt</a
+              >
+            </li>
+
+            <a class="btn btn-primary" href="login.html" role="button"
+              >Prijava</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 pb-5">
+            <p class="sectionTitle m-0 pt-5 pb-3">Preduzetnik</p>
+            <p class="konsultovanjeText m-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
+              ornare sed sed ipsum quam integer viverra. Et nunc, lacinia nulla
+              urna, in pretium arcu elementum ullamcorper. Neque aliquet massa
+              vitae urna, pharetra, duis. Habitant diam sagittis tincidunt et
+              interdum fringilla nec, id. Elementum lacus, enim elementum non.
+              Aliquam bibendum at lobortis ut aenean. Libero viverra sit dui
+              mauris sed ullamcorper mi nunc.
+            </p>
+
+            <table class="tableCont mt-5" style="width: 100%">
+              <tr>
+                <th class="titleTable pb-3 pl-3">Preduzetnik</th>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">
+                  Blagovremeno knjiženje dokumentacije
+                </td>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">
+                  Elektronsko podnozenje poreskih i PDV prijava
+                </td>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">Prijave i odjave radnika</td>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">Izrada ugovora o radu</td>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">Izrada zavrsnih racuna</td>
+              </tr>
+              <tr>
+                <td class="tableContent pl-3">
+                  Savjetovanje u vezi poreskih i racunovodstvenih prospisa
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div
+            class="col-12 col-lg-5 d-flex align-items-center justify-content-center pb-5 pb-lg-0"
+          >
+            <img src="img/preduzetnici.jpg" class="imgKonstPredPredze" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #3f3d56">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-md-5 col-lg-4 pt-5 pb-5 text-center text-md-left"
+          >
+            <p style="color: #f2f2f2; font-size: 18px">Bosna i Hercegovina</p>
+            <div
+              class="address d-flex align-items-center justify-content-center justify-content-md-start"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 22 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 0.666504C8.18945 0.666363 5.49238 1.77552 3.49503 3.75289C1.49768 5.73027 0.36148 8.41605 0.333374 11.2265C0.333374 18.5332 9.73337 26.6665 10.1334 27.0132C10.3749 27.2197 10.6822 27.3333 11 27.3333C11.3178 27.3333 11.6252 27.2197 11.8667 27.0132C12.3334 26.6665 21.6667 18.5332 21.6667 11.2265C21.6386 8.41605 20.5024 5.73027 18.505 3.75289C16.5077 1.77552 13.8106 0.666363 11 0.666504ZM11 15.3332C10.0771 15.3332 9.17481 15.0595 8.40738 14.5467C7.63995 14.0339 7.04181 13.3051 6.6886 12.4524C6.33539 11.5996 6.24298 10.6613 6.42304 9.75608C6.60311 8.85084 7.04756 8.01932 7.70021 7.36667C8.35285 6.71403 9.18437 6.26957 10.0896 6.08951C10.9949 5.90944 11.9332 6.00186 12.7859 6.35507C13.6386 6.70828 14.3675 7.30641 14.8802 8.07384C15.393 8.84127 15.6667 9.74352 15.6667 10.6665C15.6667 11.9042 15.175 13.0912 14.2999 13.9663C13.4247 14.8415 12.2377 15.3332 11 15.3332Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                Trg 7. oktobra bb, Brod, RS
+              </p>
+            </div>
+            <div
+              class="telefonCont d-flex align-items-center justify-content-center justify-content-md-start pt-3"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.675 7.19375L24.3469 3.86875C24.1121 3.63295 23.8331 3.44586 23.5258 3.31822C23.2185 3.19058 22.889 3.12492 22.5563 3.125C21.8781 3.125 21.2406 3.39063 20.7625 3.86875L17.1813 7.45C16.9454 7.68477 16.7584 7.96382 16.6307 8.27111C16.5031 8.5784 16.4374 8.90788 16.4375 9.24063C16.4375 9.91875 16.7031 10.5563 17.1813 11.0344L19.8 13.6531C19.187 15.0043 18.3348 16.2334 17.2844 17.2812C16.2366 18.3342 15.0076 19.1895 13.6563 19.8062L11.0375 17.1875C10.8027 16.9517 10.5237 16.7646 10.2164 16.637C9.9091 16.5093 9.57962 16.4437 9.24688 16.4438C8.56875 16.4438 7.93125 16.7094 7.45313 17.1875L3.86875 20.7656C3.63266 21.0008 3.44541 21.2804 3.31777 21.5882C3.19012 21.8961 3.12461 22.2261 3.125 22.5594C3.125 23.2375 3.39063 23.875 3.86875 24.3531L7.19063 27.675C7.95313 28.4406 9.00625 28.875 10.0875 28.875C10.3156 28.875 10.5344 28.8563 10.75 28.8188C14.9625 28.125 19.1406 25.8844 22.5125 22.5156C25.8813 19.15 28.1188 14.975 28.8219 10.75C29.0344 9.45937 28.6063 8.13125 27.675 7.19375Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                +387 053/612-127
+              </p>
+            </div>
+            <div
+              class="emailCont d-flex align-items-center justify-content-center justify-content-md-start pt-3"
+            >
+              <p class="m-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.4445 5.3335H3.55561C3.08411 5.3335 2.63193 5.5208 2.29853 5.8542C1.96513 6.18759 1.77783 6.63978 1.77783 7.11127V24.889C1.77783 25.3605 1.96513 25.8127 2.29853 26.1461C2.63193 26.4795 3.08411 26.6668 3.55561 26.6668H28.4445C28.916 26.6668 29.3682 26.4795 29.7016 26.1461C30.035 25.8127 30.2223 25.3605 30.2223 24.889V7.11127C30.2223 6.63978 30.035 6.18759 29.7016 5.8542C29.3682 5.5208 28.916 5.3335 28.4445 5.3335ZM27.0756 24.889H5.03117L11.2534 18.4535L9.97339 17.2179L3.55561 23.8579V8.46239L14.6045 19.4579C14.9376 19.7891 15.3882 19.9749 15.8578 19.9749C16.3275 19.9749 16.7781 19.7891 17.1112 19.4579L28.4445 8.18683V23.7424L21.9023 17.2002L20.6489 18.4535L27.0756 24.889ZM4.72005 7.11127H27.0045L15.8578 18.1957L4.72005 7.11127Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </p>
+              <p class="m-0 pl-3" style="color: #f2f2f2; font-size: 18px">
+                knjigagencijaakt@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 pt-5 pb-5">
+            <div class="contNslovi">
+              <p
+                class="m-0 pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+                style="color: #f2f2f2; font-size: 18px"
+              >
+                Novosti
+              </p>
+              <div
+                class="naslovContOne pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContTwo pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContThree pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContFour pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContFive pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+              <div
+                class="naslovContSix pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0" style="color: #f2f2f2">Naslov</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 col-lg-4 pt-5 pb-5">
+            <div class="navigacijaCont">
+              <p
+                class="m-0 pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+                style="color: #f2f2f2; font-size: 18px"
+              >
+                Navigacija
+              </p>
+              <div
+                class="navPocetna pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#banner"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Početna</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navOnama pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a href="#oNama" style="color: #f2f2f2; text-decoration: none"
+                    >O Nama</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navUsluga pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#usluge"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Usluge</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navNastim pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#nasTim"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Naš Tim</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navNovosti pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#newsSection"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Novosti</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navPitanja pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#pitanja"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Pitanja</a
+                  >
+                </p>
+              </div>
+              <div
+                class="navkontakt pl-3 pb-3 d-flex justify-content-center justify-content-md-start"
+              >
+                <p class="m-0">
+                  <a
+                    href="#kontakt"
+                    style="color: #f2f2f2; text-decoration: none"
+                    >Kontakt</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-12 d-flex align-items-center justify-content-center"
+          >
+            <i
+              class="fas fa-copyright"
+              style="width: 32px; height: 32px; color: #f2f2f2"
+            ></i>
+            <p style="color: #f2f2f2">2021 PHI | Privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/timezone.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

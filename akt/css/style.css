@@ -1,0 +1,388 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#topInfo {
+  background-color: #fed803;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.topInfo {
+  background-color: #fed803;
+}
+
+.topInfoPar {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3f3d56;
+}
+
+#nav {
+  position: fixed;
+  top: 34px;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar {
+  background-color: #3f3d56;
+}
+
+.titleAkt {
+  font-size: 48px;
+  color: #f2f2f2;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titleAktCont {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.knjigAgenTitle {
+  font-size: 64px;
+  color: #3f3d56;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+.akt {
+  font-size: 128px;
+  color: #3f3d56;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.bannerBtn {
+  width: 200px;
+  height: 48px;
+  background-color: #fed803;
+}
+
+#bannerBtnVise {
+  font-size: 32px;
+  color: #3f3d56;
+  font-weight: bold;
+}
+
+.reklamaBtn {
+  width: 200px;
+  height: 48px;
+  background-color: #3f3d56;
+}
+
+.sectionTitle {
+  font-size: 64px;
+}
+
+.oNamaText {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+#oNamaSvg {
+  height: 404px;
+  width: 354px;
+}
+
+.card-body {
+  background-color: #fed803;
+  font-size: 32px;
+}
+
+#bannerBroj {
+  background-image: url("../img/bannerNumber.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#transpColor {
+  height: 500px;
+  background-color: rgba(63, 61, 86, 0.6);
+}
+
+.bannerBrojTitle {
+  font-size: 48px;
+  color: #fed803;
+  line-height: 48px;
+}
+
+.counterBuss {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fed803;
+}
+.counterYears {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fed803;
+}
+.procentCont {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fed803;
+}
+
+.numberName {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fed803;
+}
+/*Nas tim*/
+.card-text-tim {
+  font-size: 32px;
+}
+
+#nasTimImg {
+  width: 200px;
+  height: 200px;
+}
+
+/*Novosti*/
+.contCardNovosti {
+  width: 20rem;
+  background-color: #fff;
+}
+.contNovostiNaslov {
+  width: 16rem;
+  font-size: 24px;
+  line-height: 24px;
+}
+/*pitanja*/
+#pitanje {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+.card-body-pitanje {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.posaljiBtn {
+  width: 200px;
+  height: 48px;
+  background-color: #fed803;
+}
+#posaljiBtnFont {
+  font-size: 32px;
+  color: #3f3d56;
+}
+
+/*Novosti*/
+#titleNews {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#arhivaTitle {
+  font-size: 32px;
+}
+
+@media (max-width: 576px) {
+  #topInfo {
+    background-color: #fed803;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .banner {
+    height: 300px;
+  }
+
+  #titleAktCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .knjigAgenTitle {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .akt {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .bannerBtn {
+    width: 150px;
+  }
+  #bannerBtnVise {
+    font-size: 16px;
+  }
+  .sectionTitle {
+    font-size: 32px;
+  }
+  .oNamaText {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  #oNamaSvg {
+    height: 304px;
+    width: 254px;
+  }
+  /*counter*/
+  #bannerBroj {
+    height: 800px;
+  }
+
+  #transpColor {
+    height: 800px;
+  }
+
+  .bannerBrojTitle {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+  }
+  #timText {
+    width: 230px;
+    height: 200px;
+  }
+  .posaljiBtn {
+    width: 150px;
+  }
+  #posaljiBtnFont {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #topInfo {
+    background-color: #fed803;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .knjigAgenTitle {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .akt {
+    font-size: 128px;
+    line-height: 128px;
+  }
+
+  .bannerBtn {
+    width: 150px;
+  }
+  #bannerBtnVise {
+    font-size: 16px;
+  }
+  /*counter*/
+  #bannerBroj {
+    height: 800px;
+  }
+
+  #transpColor {
+    height: 800px;
+  }
+  .bannerBrojTitle {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #topInfo {
+    background-color: #fed803;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #nav {
+    position: fixed;
+    top: 68px;
+    width: 100%;
+    z-index: 1;
+  }
+  .card-body {
+    background-color: #fed803;
+    font-size: 24px;
+  }
+  /*counter*/
+  #bannerBroj {
+    height: 500px;
+  }
+
+  #transpColor {
+    height: 500px;
+  }
+  /*Nas tim*/
+
+  #nasTimImg {
+    width: 100px;
+    height: 100px;
+  }
+  /*Novosti*/
+  .contCardNovosti {
+    width: 16rem;
+    background-color: #fff;
+  }
+  .contNovostiNaslov {
+    width: 16rem;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #nav {
+    top: 52px;
+  }
+  .contNovostiNaslov {
+    width: 16rem;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  /*counter*/
+  #bannerBroj {
+    height: 500px;
+  }
+
+  #transpColor {
+    height: 500px;
+  }
+}

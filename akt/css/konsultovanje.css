@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#topInfo {
+  background-color: #fed803;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.topInfo {
+  background-color: #fed803;
+}
+
+.topInfoPar {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3f3d56;
+}
+
+#nav {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar {
+  background-color: #3f3d56;
+}
+
+.titleAkt {
+  font-size: 48px;
+  color: #f2f2f2;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  font-size: 16px;
+}
+.sectionTitle {
+  font-size: 64px;
+}
+.konsultovanjeText {
+  font-size: 18px;
+}
+
+.tableCont {
+  background-color: #f2f2f2;
+  font-size: 24px;
+}
+.titleTable {
+  font-size: 32px;
+}
+
+.tableContent {
+  font-size: 16px;
+  border-bottom: 1px solid;
+}
+.imgKonstPredPredze {
+  height: 300px;
+}
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 32px;
+  }
+  .titleTable {
+    font-size: 24px;
+  }
+  .tableCont {
+    background-color: #f2f2f2;
+    font-size: 16px;
+  }
+  .imgKonstPredPredze {
+    width: 260px;
+    height: 200px;
+  }
+}
